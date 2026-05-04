@@ -1,6 +1,14 @@
 function validatePassword(password) {
     
-    if (!( /[a-z]/.test(password) && /[A-Z]/.test(password) && password.length < 8)) {
+    if (password.length < 8) {
+        return "Password must be at least 8 characters.";
+    }
+
+    if (/^[0-9]+$/.test(password)) {
+        return "Password cannot be only numbers.";
+    }
+
+    if (!( /[a-z]/.test(password) && /[A-Z]/.test(password && password.length < 8) )) {
         return "Password must include uppercase and lowercase letters.";
     }
 
