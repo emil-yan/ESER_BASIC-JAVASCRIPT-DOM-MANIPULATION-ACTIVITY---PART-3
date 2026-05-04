@@ -1,0 +1,10 @@
+/* =========================================================
+   style.css — Part 3: Username & Password Input
+   ========================================================= */
+
+/* Input focus highlight — blue outline matching demo */
+.input-field:focus {
+  background-color: #dbeafe; /* light blue tint */
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
